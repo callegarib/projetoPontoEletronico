@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infra", "3-Infra", "{99B8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Testes", "4-Testes", "{1700EC56-B5AB-4A08-9F52-986F1C2A1FD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AionFlux.Mvc", "AionFlux.Mvc\AionFlux.Mvc.csproj", "{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AionFlux.Mvc", "AionFlux.Mvc\AionFlux.Mvc.csproj", "{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F2BD904-99A6-4672-8F69-866F8B45F4CF} = {2F2BD904-99A6-4672-8F69-866F8B45F4CF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PontoEletronico", "PontoEletronico\PontoEletronico.csproj", "{2F2BD904-99A6-4672-8F69-866F8B45F4CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +28,17 @@ Global
 		{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2BD904-99A6-4672-8F69-866F8B45F4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2BD904-99A6-4672-8F69-866F8B45F4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2BD904-99A6-4672-8F69-866F8B45F4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2BD904-99A6-4672-8F69-866F8B45F4CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD} = {18BF393A-60B1-47CA-8229-B03977EAFADD}
+		{2F2BD904-99A6-4672-8F69-866F8B45F4CF} = {EB69BBA5-5123-4E28-B9A1-752FE35F2D49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E38CCE6-F678-4092-9C71-B993023600B6}

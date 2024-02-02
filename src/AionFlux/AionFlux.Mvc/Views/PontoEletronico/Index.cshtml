@@ -1,0 +1,33 @@
+﻿@model List<CartaoPonto>
+
+<div class="container mt-4">
+    <h2>Lista de Cartões Ponto</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Funcionário</th>
+                <th>Data</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cartaoPonto in Model)
+            {
+                <tr>
+                    <td>@cartaoPonto.Id</td>
+                    <td>@cartaoPonto.Funcionario.Nome</td>
+                    <td>@cartaoPonto.Data.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Detalhes" asp-route-id="@cartaoPonto.Id">Detalhes</a> |
+                        <a asp-action="Editar" asp-route-id="@cartaoPonto.Id">Editar</a> |
+                        <a asp-action="Remover" asp-route-id="@cartaoPonto.Id">Remover</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="@Url.Action("CadastrarCartaoPonto")" class="btn btn-primary">Cadastrar Novo Cartão Ponto</a>
+</div>

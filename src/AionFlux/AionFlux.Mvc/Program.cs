@@ -10,6 +10,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -19,5 +20,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "cartaoponto",
+    pattern: "{controller=CartaoPonto}/{action=Index}/{id?}");
 
 app.Run();

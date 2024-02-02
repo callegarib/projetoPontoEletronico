@@ -1,9 +1,9 @@
+using PontoEletronico;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddSingleton<AdminCartaoPonto>(); 
 builder.Services.AddControllersWithViews();
-
-// Adicione os serviços necessários, incluindo AdminCartaoPonto, se necessário.
 
 var app = builder.Build();
 

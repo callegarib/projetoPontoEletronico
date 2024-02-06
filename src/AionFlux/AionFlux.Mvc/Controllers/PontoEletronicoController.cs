@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PontoEletronico;
 
 namespace AionFlux.Mvc.Controllers
 {
+    [Authorize]
     public class PontoEletronicoController : Controller
     {
         private readonly AdminCartaoPonto adminCartaoPonto;

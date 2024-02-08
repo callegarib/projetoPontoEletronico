@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PontoEletronico
+namespace PontoEletronico.Regras
 {
-    public class Ponto
-    {       
-        public List<Registro> Registros { get; set; }
+    public interface IDeletar<T>
+    {
+        Task Deletar(int ID);
     }
 }
-

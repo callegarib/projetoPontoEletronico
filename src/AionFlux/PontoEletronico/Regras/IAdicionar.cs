@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PontoEletronico
+namespace PontoEletronico.Regras
 {
-    public enum TipoAcao
+    public interface IAdicionar<T>
     {
-        Entrada,
-        Saida
+        T Adicionar(T objeto);
     }
 }

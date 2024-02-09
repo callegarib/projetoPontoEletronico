@@ -9,7 +9,7 @@ namespace PontoEletronico;
 public class AdminCartaoPonto
 {
     private List<Funcionario> funcionarios = new List<Funcionario>();
-    private List<CartaoPonto> cartoesPonto = new List<CartaoPonto>();
+    public List<CartaoPonto> cartoesPonto = new List<CartaoPonto>();
     private List<Registro> registros = new List<Registro>();
     public void CadastrarFuncionario(Funcionario funcionario)
     {

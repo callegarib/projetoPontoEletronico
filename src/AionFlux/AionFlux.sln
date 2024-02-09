@@ -20,6 +20,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PontoEletronico", "PontoEle
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AionFlux.WebApi", "AionFlux.WebApi\AionFlux.WebApi.csproj", "{9CA031DC-AB69-4B07-8EF3-C1ECEC3F785F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AionFlux.DAO", "AionFlux.DAO\AionFlux.DAO.csproj", "{6B776BB1-582D-4FBB-BBB6-ACBA88D97522}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autenticador", "Autenticador", "{4765AA55-8AEF-460F-8C3A-A1B24F4F6C45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,10 @@ Global
 		{9CA031DC-AB69-4B07-8EF3-C1ECEC3F785F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CA031DC-AB69-4B07-8EF3-C1ECEC3F785F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CA031DC-AB69-4B07-8EF3-C1ECEC3F785F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B776BB1-582D-4FBB-BBB6-ACBA88D97522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B776BB1-582D-4FBB-BBB6-ACBA88D97522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B776BB1-582D-4FBB-BBB6-ACBA88D97522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B776BB1-582D-4FBB-BBB6-ACBA88D97522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{60E6BE0C-BB0C-454B-8136-15A9FB0BC8BD} = {18BF393A-60B1-47CA-8229-B03977EAFADD}
 		{2F2BD904-99A6-4672-8F69-866F8B45F4CF} = {EB69BBA5-5123-4E28-B9A1-752FE35F2D49}
 		{9CA031DC-AB69-4B07-8EF3-C1ECEC3F785F} = {18BF393A-60B1-47CA-8229-B03977EAFADD}
+		{6B776BB1-582D-4FBB-BBB6-ACBA88D97522} = {99B858F7-D967-41EC-A81B-DF9B94B2E67E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E38CCE6-F678-4092-9C71-B993023600B6}

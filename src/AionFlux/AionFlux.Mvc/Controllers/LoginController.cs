@@ -111,7 +111,7 @@ namespace AionFlux.Mvc.Controllers
                         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal, authProperties);
 
                         // Redirect to another page or return success
-                        return RedirectToAction("Index", "Pizzas");
+                        return RedirectToAction("Index");
                     }
                     else
                     {

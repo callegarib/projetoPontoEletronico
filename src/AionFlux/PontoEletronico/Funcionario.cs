@@ -18,7 +18,7 @@ namespace PontoEletronico
         public string Email { get; set; }
         public Perfil PerfilTrabalho { get; set; } = new Perfil();
 
-        public List<Ponto> ListaDePontos { get; set; }
+        public List<Ponto>? ListaDePontos { get; set; }
     }
 
 }
